@@ -1,26 +1,32 @@
-# Translation App
+Notes App Development Project
 
-The user has a basic translation app that can translate between different languages
-## Functionality 
+Overview
 
-The following **required** functionality is completed:
+This project involves developing a notes application with specific functionalities and layout requirements. The app will feature a main screen with a list of notes and a separate fragment for adding or editing notes.
 
-* [ ] User can choose which language they want to translate from
-* [ ] User can choose which langauge to translate to
-* [ ] User can input text to translate
-* [ ] User can view the translated texts
+Main Screen (Home Screen)
+Layout: Includes a RecyclerView and an "Add Note" button.
+RecyclerView: Occupies all available space except for the button area, with a margin of 10dp.
+Functionality:
+Displays the titles of notes.
 
+Saving a note stores it in a local database and returns it to the Main Activity.
 
-The following **extensions** are implemented:
+The back button returns to the Main Activity without saving.
 
-* ...
-* ...
+Data Storage
 
-## Video Walkthrough
+Database: Utilize the Room Library for data persistence.
 
+RecyclerView Updates: Implement DiffUtil for efficient redrawing and updates.
+Additional Considerations
 
+Ensure smooth navigation between fragments.
 
-## Notes
+Implement efficient data handling with Room Library.
+
+Prioritize user experience in terms of interface design and responsiveness.
+Include error handling, especially for database operations and fragment transitions.
 
 ## License
 
